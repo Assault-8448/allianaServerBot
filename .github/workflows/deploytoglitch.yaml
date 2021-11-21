@@ -9,7 +9,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Deploy to glitch
-              uses: kanadgupta/glitch-sync@master
+              uses: kanadgupta/glitch-sync@v1.1
               with:
                   project-id: '${{ secrets.PROJECT_ID }}'
                   auth-token: '${{ secrets.AUTH_TOKEN }}'
