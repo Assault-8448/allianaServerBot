@@ -13,7 +13,7 @@ export default (message: Message, args: string[]) => {
     if (args.length === 0) {
         return message.channel.send('変更したい名前を入れてください。')
     } else {
-        const selectedName = args[0]
+        const selectedName = args.toString()
         if (selectedName.length >= 16) {
             return message.channel.send('名前は16文字以内にしてください。')
         } else {
